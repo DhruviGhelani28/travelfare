@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Final</title>
+    <link href="App.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="a">
+            <h1 style="text-align:right">Fare Enough</h1>
+            <p style="text-align:right">Our app will help you to find travelling fares</p>
+                      
+	<a href="http://117.232.115.58:9080/GetFare.aspx"><button>Brts-Bus</button></a>
+	<a href="https://gsrtc.in/site/"><button>Bus(Gsrtc)</button></a>        
+            <form>
+
+			<h5>Auto-Riksha</h5>
+                    <label for="from" >From:</label>
+                        <input type="text" id="from" placeholder="Origin" class="form-control">
+                    <label for="to" class="col-xs-2 control-label">To:</label>
+                   
+                        <input type="text" id="to" placeholder="Destination" class="form-control">
+                   
+            </form>
+
+                <button class="btn btn-info btn-lg" onclick="calcRoute();">Submit</button>
+           
+            <div id="googleMap">
+
+            </div>
+            <div id="output">
+
+            </div>
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwJ2Vepe9L2Miuh7QH87SR_RItIXHlX6Q&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>
